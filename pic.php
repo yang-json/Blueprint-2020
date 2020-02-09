@@ -50,22 +50,17 @@ body {
 		
 		$result = file_get_contents("test.json");
 		$result = json_decode($result, false);
+		$result = floatval($result);
 		sleep(1);
 	}while ($result == "0");
 	echo "<font color='white'>";
-	if ($result == "1"){
-		echo "Unfortunately, the cell has a high likelihood of being infected";
+	echo "The cell has a ".$result." percent chance of having malaria";
 		echo "<br>";
 		echo "Click this image for more info and next steps";
 		echo "<br>";
 		echo "<a href=\"https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/malaria\">";
 		echo "<img src='recovery.jpg' class='center'>";
 		echo "</a>";
-	} else if ($result == "2") {
-		echo "you don't have malaria :(";
-	} else {
-		echo "an error has ocurred bubbo";
-	}
 	echo "</font>";
 	$done = 1;
 	$reset = json_encode("0");
