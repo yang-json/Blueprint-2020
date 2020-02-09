@@ -41,7 +41,7 @@ body {
 }
 </style>
 <font color="white">
-<img src="group.jpg">
+<img src="group.jpg" style = "width:100%">
 Data sets from Jaeger S at NIH
 <br>
 Images:
