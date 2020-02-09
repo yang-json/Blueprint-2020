@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cell Identifier</title>
+</head>
+<body>
+<form method="post" >
+
+Hello, today is <?php echo date('l, F jS, Y'); ?>.
+  		Your image: <input type="file" name="pic" accept="image/png" id="pic"><br>
+		<input type = "submit"> 
+	</form>
+</body>
+</html>
